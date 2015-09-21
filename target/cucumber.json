@@ -1,0 +1,639 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 7,
+        "name": "Sign-up a new user with datatable example",
+        "description": "",
+        "id": ";sign-up-a-new-user-with-datatable-example",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26713902331,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user is on landing page",
+            "match": {
+              "location": "NewClientWorkflow.the_user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2221559149,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "she chooses to sign up",
+            "match": {
+              "location": "NewClientWorkflow.she_chooses_to_sign_up()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9716256545,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "she provides the her details as follows:",
+            "match": {
+              "location": "DataTableExample.she_provides_the_her_details_as_follows(DataTableExample$UserDetails\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstName",
+                  "lastName",
+                  "email",
+                  "password",
+                  "cnfpassword"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "Monisa",
+                  "Samal",
+                  "monisa1@mail.com",
+                  "password",
+                  "password"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3438084307,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "she signs-up",
+            "match": {
+              "location": "NewClientWorkflow.she_signs_up()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1597042665,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "she should be logged in to the application",
+            "match": {
+              "location": "NewClientWorkflow.she_should_be_logged_in_to_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Signup-DataTable"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "As a user\r\nI want to be able to add new clients in the system\r\nSo that i can add accounting data for that client",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "DataTableExample.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1169171523,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is on landing page",
+            "match": {
+              "location": "NewClientWorkflow.the_user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 185007232,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "she chooses to sign up",
+            "match": {
+              "location": "NewClientWorkflow.she_chooses_to_sign_up()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Sign up a new user",
+        "description": "",
+        "id": ";sign-up-a-new-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 713042475,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "she provides the first name as \"Biswajit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Biswajit",
+                  "offset": 32
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_first_name_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104199408,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "she provides the last name as \"Samal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Samal",
+                  "offset": 31
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_last_name_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 177940678,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "she provides the email as \"biswajitsamal7@mail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "biswajitsamal7@mail.com",
+                  "offset": 27
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_email_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 123414413,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "she provides the password as \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 30
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_password_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101361250,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "she provides the confirm password again as \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 44
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_confirm_password_again_as(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3174173251,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "she signs-up",
+            "match": {
+              "location": "NewClientWorkflow.she_signs_up()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1523414315,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "she should be logged in to the application",
+            "match": {
+              "location": "NewClientWorkflow.she_should_be_logged_in_to_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 10,
+            "name": "@Signup-Simple"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1020964534,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is on landing page",
+            "match": {
+              "location": "NewClientWorkflow.the_user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 199487900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "she chooses to sign up",
+            "match": {
+              "location": "NewClientWorkflow.she_chooses_to_sign_up()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "Data driving new user sign-up",
+        "description": "",
+        "id": ";data-driving-new-user-sign-up;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 762190612,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "she provides the first name as \"Satyajit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Satyajit",
+                  "offset": 32
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_first_name_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 113888546,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "she provides the last name as \"Samal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Samal",
+                  "offset": 31
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_last_name_as(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 563577233,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "she provides the email as \"satyaji8t@mail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "satyaji8t@mail.com",
+                  "offset": 27
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_email_as(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 126754601,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "she provides the password as \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 30
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_password_as(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 265382929,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "she provides the confirm password again as \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 44
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_confirm_password_again_as(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1996583065,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "she signs-up",
+            "match": {
+              "location": "NewClientWorkflow.she_signs_up()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1536226110,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "she should be logged in to the application",
+            "match": {
+              "location": "NewClientWorkflow.she_should_be_logged_in_to_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@Signup-DataDriven"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 936892290,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is on landing page",
+            "match": {
+              "location": "NewClientWorkflow.the_user_is_on_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 158993554,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "she chooses to sign up",
+            "match": {
+              "location": "NewClientWorkflow.she_chooses_to_sign_up()"
+            },
+            "keyword": "When "
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "Data driving new user sign-up",
+        "description": "",
+        "id": ";data-driving-new-user-sign-up;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 713441362,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "she provides the first name as \"Biswajit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Biswajit",
+                  "offset": 32
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_first_name_as(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 94326471,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "she provides the last name as \"samal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "samal",
+                  "offset": 31
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_last_name_as(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 148149307,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "she provides the email as \"biswajit8@mail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "biswajit8@mail.com",
+                  "offset": 27
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_email_as(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 139671007,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "she provides the password as \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 30
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_password_as(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 99562349,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "she provides the confirm password again as \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 44
+                }
+              ],
+              "location": "NewClientWorkflow.she_provides_the_confirm_password_again_as(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2040188338,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "she signs-up",
+            "match": {
+              "location": "NewClientWorkflow.she_signs_up()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1461409410,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "she should be logged in to the application",
+            "match": {
+              "location": "NewClientWorkflow.she_should_be_logged_in_to_the_application()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 21,
+            "name": "@Signup-DataDriven"
+          }
+        ]
+      }
+    ],
+    "name": "",
+    "description": "As a user\r\nI want to be able to add new clients in the system\r\nSo that i can add accounting data for that client",
+    "id": "",
+    "keyword": "Feature",
+    "uri": "NewClientWorkflow.feature"
+  }
+]
