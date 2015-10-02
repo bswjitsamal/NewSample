@@ -9,7 +9,7 @@ import cucumber.api.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions (features = "src/test/resources/com/features/",
                    glue = "com.stepdefinations", 
-                   tags = { "@Signup-DataDriven, @Signup-Simple, @Signup-DataTable"} ,
+                   tags = {"@UserForm-DataTable"} ,
                    monochrome = true, 
                    plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json" })
 

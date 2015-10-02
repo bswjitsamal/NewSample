@@ -3,7 +3,6 @@ Feature:
   I want to be able to  new tab in the system
   So that i can view blogs for that client
   
-   @SwitchTab-DataTable
   Scenario: Switch a new tab 
     Given user is on landing page
     When I chooses to blogs
